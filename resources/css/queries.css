@@ -112,6 +112,8 @@
     margin-left:0;
     word-spacing: 30px;
     }
+    
+    
 }
     
 /* small phones 0-480px */
@@ -120,4 +122,14 @@
     
 
     .logo-colour{height:30px}
+    
+    .footer-nav{
+    margin-left: 10%;
+    }
+    
+    .social-links {
+    list-style: none;
+    float:left;
+    margin-left: 30%;
+    }   
 }

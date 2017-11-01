@@ -19,6 +19,10 @@ Shadow Colour: #bcbcbc
     box-sizing: border-box;
 }
 
+*:focus {
+outline: 0;
+outline: none;
+}
 
 html,
 body{
@@ -39,6 +43,7 @@ body{
     height: 0;
     visibility: hidden;
 }
+
 
 
 /*--------------------------------------------------------------------*/

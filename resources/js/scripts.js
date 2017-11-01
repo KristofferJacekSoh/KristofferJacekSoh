@@ -9,12 +9,12 @@ $(document).ready(function () {
         $(".tabbed-box .tabs li a").click(function (){ 
             //if($(this).hasClass("expanded")){
                 openTab($(this)); 
-                
+                return false; 
                 /*if($(window).width()<=768){
                     
                     $(".tabbed-box .tabs li a").removeClass("expanded");
                 }
-                return false; 
+                
             } else{
                 $(".tabbed-box .tabs li a").removeClass("active animated fadeIn");
                 $(".tabbed-box .tabs li a").slideToggle(200);
@@ -66,7 +66,7 @@ $(document).ready(function () {
                 // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
                 $('html, body').animate({
-                  scrollTop: target.offset().top-60
+                  scrollTop: target.offset().top-40
                 }, 1000, function() {
                   // Callback after animation
                   // Must change focus!
