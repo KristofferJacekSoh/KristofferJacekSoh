@@ -1,36 +1,12 @@
 
 $(document).ready(function () {
  
-/*---------------------------------
- TABBED BOX */
 
-        
-    
-        $(".tabbed-box .tabs li a").click(function (){ 
-            //if($(this).hasClass("expanded")){
-                openTab($(this)); 
-                return false; 
-                /*if($(window).width()<=768){
-                    
-                    $(".tabbed-box .tabs li a").removeClass("expanded");
-                }
-                
-            } else{
-                $(".tabbed-box .tabs li a").removeClass("active animated fadeIn");
-                $(".tabbed-box .tabs li a").slideToggle(200);
-            }*/
-        });
-        
-        $(".tabbed-box .tabs li a:eq("+currentTab+")").click();
-        
-        /*if($(window).width()<=768){
-        $(".tabbed-box .tabs li a").removeClass("expanded");
-        }*/
 /*---------------------------------
  STICKY NAV*/
     
         //makes the sticky nav appear at the top once scrolling past the main image
-        $('.js--section-features').waypoint(function(direction) {
+        $('.js--section-modular').waypoint(function(direction) {
                 if (direction === "down" ) {
                     $('nav').addClass('sticky');
                 } else{
@@ -53,11 +29,9 @@ $(document).ready(function () {
           .not('[href="#0"]')
           .click(function(event) {
             // On-page links
-            if (
-              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-              && 
-              location.hostname == this.hostname
-            ) {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+              &&
+              location.hostname == this.hostname) {
               // Figure out element to scroll to
               var target = $(this.hash);
               target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -110,7 +84,7 @@ $(document).ready(function () {
          });
 });
                   
-var currentTab = 0; 
+
 
 function openTab(clickedTab) {
 	var thisTab = $(".tabbed-box .tabs a").index(clickedTab);
