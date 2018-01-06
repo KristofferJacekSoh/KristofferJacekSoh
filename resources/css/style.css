@@ -167,7 +167,7 @@ header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/hero-img2.jpg);
     background-size:cover;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
     background-attachment: fixed;
 }
 
@@ -266,7 +266,11 @@ header{
 .section-modular h2{
     text-align: right;
     margin-right:0;
-    margin-bottom: 0
+    margin-bottom: 0;
+}
+
+.modular-text{
+    margin-top:30px;
 }
 
 .modular-icon{
@@ -282,6 +286,15 @@ header{
     text-align: right;
 }
 
+.modular-img{
+    display:inline-block;
+    height: 300px;
+    width:auto;
+    text-align: center;
+    vertical-align: middle;
+    margin-left:40%;
+    margin-top:-50px;
+}
 /*--------------------------------------------------------------------*/
 /* FEATURES */
 
@@ -323,6 +336,14 @@ header{
     text-align: left;
 }
 
+.config-img{
+    display: block;
+    height: 300px;
+    width: auto;
+    vertical-align: middle;
+    margin-top:-50px;
+}
+
 /*--------------------------------------------------------------------*/
 
 /* PRICING */
@@ -345,6 +366,11 @@ header{
     width: 100px;
     margin: 0 auto;
     margin-top: 15px;
+}
+
+.section-pricing h3{
+    text-transform: none;
+    padding-bottom: 10px;
 }
 
 .plan-box{
@@ -381,16 +407,17 @@ header{
 }
 
 .plan-box i{
- 
+    margin-right:-15px;
 }
 
 .plan-box ul {
     list-style: none;
-    text-indent:-30px;
+    text-indent:-15px;
 }
 
 .plan-box ul li{
-    padding:5px 0 5px 60px;
+    padding:5px 10px 5px 40px;
+    
 }
 
 /*--------------------------------------------------------------------*/
