@@ -32,6 +32,8 @@
     
     p{text-align: center}
     
+    header p{text-align: left}
+    
     .col{
         width:100%;
         margin:0 0 4% 0;

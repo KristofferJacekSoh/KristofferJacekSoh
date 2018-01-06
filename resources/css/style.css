@@ -76,6 +76,12 @@ h1{
     color:#fff;
     word-spacing: 3px;
     letter-spacing: 1px;
+    margin-bottom:5px;
+}
+
+.subtitle{
+    font-size: 100%;
+    color:rgba(255, 255, 255, 0.7);
 }
 
 h2{
@@ -135,21 +141,33 @@ a:active{
 /* ICONS */
 
 .icon-large{
-    font-size:300%;
+    font-size:432%;
     display:block;
     color: #008b8e;
     margin-bottom: 10px;
     text-align:center;
 }
 
+.icon-small {
+    display: inline-block;
+    width:30px;
+    text-align: center;
+    color: #555555;
+    font-size:120%;
+    /* secrets to align text and icons*/
+    margin-top: -5px;
+    line-height: 120%;
+    vertical-align: middle;
+}
+
 /*--------------------------------------------------------------------*/
 /* HEADER */
 
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/hero-img2.jpg);
     background-size:cover;
     background-position: center;
-    height: 65vh;
+    height: 100vh;
     background-attachment: fixed;
 }
 
@@ -239,118 +257,146 @@ header{
 
 
 /*--------------------------------------------------------------------*/
+/* MODULAR */
+
+.section-modular{
+    background-color:#eee;
+}
+
+.section-modular h2{
+    text-align: right;
+    margin-right:0;
+    margin-bottom: 0
+}
+
+.modular-icon{
+    display:inline-block;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: -5px;
+    vertical-align: middle;
+    height: 80px;
+}
+
+.modular-text{
+    text-align: right;
+}
+
+/*--------------------------------------------------------------------*/
 /* FEATURES */
 
-.ez-link-logo{
+
+
+.section-features img{
     display:block;
     margin: 15px auto;
-    height: 50px;
+    height: 80px;
     width: auto;
 }
 
 /*--------------------------------------------------------------------*/
-/* MODULAR */
 
-.section-modular{
-    background-color: #eee;
+/* EASY-SETUP */
+.section-easy-setup{
+    background-color:#eee;
 }
 
-.modular-text{
-    text-align: center;
+.section-easy-setup h3{
+    text-align: right;
+}
+
+.section-easy-setup p{
+    text-align: right;
 }
 
 /*--------------------------------------------------------------------*/
-/* BENEFITS */
+
+/* CONFIGURATION */
 
 
 
-.tabbed-box .tabs li {
-    display:block;
-	list-style: none;
-	float: left; 
-    background-color:white;
+.section-configuration h3{
+    text-align: left;
 }
 
-.tabbed-box .tabs li a:link,
-.tabbed-box .tabs li a:visited{
+.section-configuration p{
+    text-align: left;
+}
+
+/*--------------------------------------------------------------------*/
+
+/* PRICING */
+
+.section-pricing{
+    background-color: #eee;
+}
+
+.section-pricing p{
+    text-align: center;
+    margin-bottom:10px;
+    margin-top: -15px;
+}
+
+.section-pricing h2:after {
     display: block;
-	padding: 5px 0;
-    font-size: 130%;
-    font-weight: 300;
-	text-align: center;
-	text-decoration: none;
-	color: #888;
-	border-bottom: 1px solid #ddd;
-    transition: border-bottom 0.2s font-weight 0.2s background-color 0.2s;
+    height: 2px;
+    background-color: #008b8e;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 15px;
 }
 
-
-.tabbed-box .tabs li a:hover {
-    font-weight: 400;
-	color: #333; 
-    border-bottom: 1px solid #4feda4;
+.plan-box{
+    box-shadow: 0 2px 2px #d5d5d5;
+    border-radius: 5px;
+    border: solid 1px #000 0.9;
+    background-color: #f5f5f5;
+    padding-top:20px;
 }
 
-.tabbed-box .tabs li a:focus {
-	outline: none; 
-}
-
-.tabbed-box .tabs li a.active {
-	background-color: #008b8e;
-	color: #fff;
-    font-weight: 400;
-	border-bottom: 1px solid #4feda4; 
-}
-
-.tabbed-content {
-    padding-top:6%;
-    display:none;
-    animation-duration: 1s;
+.plan-box div:first-child{
     
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #e8e8e8;
 }
 
-.tabbed-content div .col{
-    height: 200px;
-    margin:auto 0;
-    border-left: 1px solid #999;
-    padding: 10px 2%;
-    box-shadow: 0 2px 2px #efefef;
+.plan-box div:last-child{
+    background-color:#fafafa;
+    padding-top:10px;
 }
 
-.tabbed-content div .span-1-of-3{
-    width:33.33%;
+.plan-price{
+    font-size: 200%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color:#008b8e;
+    text-align: center;
 }
 
-.tabbed-content div .span-1-of-2{
-    
-}
-.tabbed-content div .col:first-child{
-    border:none;
+.plan-price span {
+    font-size: 50%;
+    font-weight:300;
 }
 
-.ion-chevron-down{
-    float: right;
-    padding-right:15px;
-    display: none;
+.plan-box i{
+ 
 }
 
-.ion-social-apple,
-.ion-social-android{
-    text-align:center;
-    display: inline-block;
+.plan-box ul {
+    list-style: none;
+    text-indent:-30px;
 }
 
-.android-ios-icon{
-    display:block;
-    margin-left:40%;
-    word-spacing: 30px;
+.plan-box ul li{
+    padding:5px 0 5px 60px;
 }
 
 /*--------------------------------------------------------------------*/
 /* CONTACT FORM */
 
 .section-contact-us{
-    background-color: #eeeeee;
 }
 
 /*--------------------------------------------------------------------*/
