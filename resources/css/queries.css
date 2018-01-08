@@ -9,6 +9,10 @@
     }
     
     .row{ padding:0 2%; }
+    
+    .modular-img{
+        margin-left:0;
+    }
 }
 
 /*ipad in portrait mode 768-1023px*/
@@ -19,6 +23,10 @@
     
     
     .main-nav{display:block;}
+    
+    .config-img{
+        height:250px;
+    }
 }
 
 /* small phones to small tablets 481-767px*/
@@ -79,34 +87,36 @@
     h2{font-size:150%;}
     h3{font-size:110%;}
     
+    .modular-text{
+        text-align:center;
+    }
     
-    .tabbed-box .tabs li a:link,
-.tabbed-box .tabs li a:visited{
+    .modular-img{
+        margin:0;
+    }
+    
+    .section-easy-setup h3{
+        text-align: center;
+    }
 
-}
-    
-    .tabbed-box .tabs li a.active {
-	display:block;
-    /*text-align: left;*/
-    padding-left: 10px;
-}
-    
-    
-    .tabbed-content{
-        margin-top: 120px;
+    .section-easy-setup p{
+        text-align: center;
     }
     
-    
-    .tabbed-content div .col{
-    border-left: none;
+    .section-configuration h3{
+        text-align: center;
+    }
+
+    .section-configuration p{
+        text-align: center;
     }
     
-    .tabbed-content div .span-1-of-3{
-    width:100%;
+    .config-text{
+        padding:0;
     }
     
-    .ion-chevron-down{
-    display: none;
+    .config-img{
+        margin:0 auto;
     }
     
     .android-ios-icon{
@@ -134,4 +144,8 @@
     float:left;
     margin-left: 30%;
     }   
+    
+    .config-img{
+        height:200px;
+    }
 }

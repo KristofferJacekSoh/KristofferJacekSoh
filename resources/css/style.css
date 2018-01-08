@@ -261,17 +261,20 @@ header{
 
 .section-modular{
     background-color:#eee;
+    padding-bottom: 30px;
+}
+
+
+.modular-text{
+    margin-top:30px;
+    text-align: right;
 }
 
 .section-modular h2{
-    text-align: right;
     margin-right:0;
     margin-bottom: 0;
 }
 
-.modular-text{
-    margin-top:30px;
-}
 
 .modular-icon{
     display:inline-block;
@@ -282,18 +285,19 @@ header{
     height: 80px;
 }
 
-.modular-text{
-    text-align: right;
-}
-
 .modular-img{
     display:inline-block;
     height: 300px;
     width:auto;
     text-align: center;
     vertical-align: middle;
-    margin-left:40%;
     margin-top:-50px;
+    margin-left:30%;
+}
+
+.modular-img-box{
+    display:inline-block;
+    text-align: center;
 }
 /*--------------------------------------------------------------------*/
 /* FEATURES */
@@ -326,7 +330,9 @@ header{
 
 /* CONFIGURATION */
 
-
+.section-configuration{
+    padding-bottom: 0;
+}
 
 .section-configuration h3{
     text-align: left;
@@ -338,10 +344,13 @@ header{
 
 .config-img{
     display: block;
-    height: 300px;
+    height: 370px;
     width: auto;
-    vertical-align: middle;
-    margin-top:-50px;
+    margin-top: 50px;
+}
+
+.config-text{
+    padding-left:80px;
 }
 
 /*--------------------------------------------------------------------*/
@@ -386,6 +395,11 @@ header{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom: 1px solid #e8e8e8;
+    padding:23px 0;
+}
+
+#plan-box-all-in-one{
+    padding: 0px;
 }
 
 .plan-box div:last-child{
