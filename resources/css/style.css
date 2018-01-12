@@ -164,8 +164,8 @@ a:active{
 /* HEADER */
 
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/hero-img2.jpg);
-    background-size:cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-img2-min.jpg);
+    background-size: cover;
     background-position: center;
     height: 80vh;
     background-attachment: fixed;
@@ -174,10 +174,10 @@ header{
 .hero-box{
     position: absolute;
     width: 1140px;
-    top:30%;
-    left:50%;
-    -webkit-transform:translate(-50%, -50%);
-    transform:translate(-50%, -50%);
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 
