@@ -6,15 +6,15 @@ $(document).ready(function () {
  STICKY NAV*/
     
         //makes the sticky nav appear at the top once scrolling past the main image
-        $('.js--section-modular').waypoint(function(direction) {
-                if (direction === "down" ) {
-                    $('nav').addClass('sticky');
-                } else{
-                    $('nav').removeClass('sticky');
-                }
-            },
-                    {offset: '60px;'}
-            );
+    $('.js--section-modular').waypoint(function (direction) {
+        if (direction === "down") {
+            $('nav').addClass('sticky');
+        } else {
+            $('nav').removeClass('sticky');
+        }   
+        },
+        {offset: '60px;'}
+    );
     
     
         
@@ -23,28 +23,28 @@ $(document).ready(function () {
     
     
         // Select all links with hashes
-        $('a[href*="#"]')
+    $('a[href*="#"]')
           // Remove links that don't actually link to anything
           .not('[href="#"]')
           .not('[href="#0"]')
-          .click(function(event) {
+          .click(function (event) {
             // On-page links
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-              &&
-              location.hostname == this.hostname) {
+            if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
+                        &&
+              location.hostname === this.hostname) {
               // Figure out element to scroll to
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
               // Does a scroll target exist?
-              if (target.length) {
+                if (target.length) {
                 // Only prevent default if animation is actually gonna happen
-                event.preventDefault();
+                    event.preventDefault();
                 $('html, body').animate({
-                  scrollTop: target.offset().top-40
-                }, 1000, function() {
+                  scrollTop: target.offset().top  -40
+                    }, 1000, function () {
                   // Callback after animation
                   // Must change focus!
-                  var $target = $(target);
+                        var $target = $(target);
                   $target.focus();
                   if ($target.is(":focus")) { // Checking if the target was focused
                     return false;
@@ -82,6 +82,12 @@ $(document).ready(function () {
                 nav.removeAttr('style');
          }
          });
+    
+        /*Change background-attachment to scrolling if ios is detected*/
+    
+        if(!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)){
+            $('header').css('background-attachment', 'scroll');
+        }
 });
                   
 
