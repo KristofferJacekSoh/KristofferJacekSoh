@@ -125,6 +125,22 @@
     word-spacing: 30px;
     }
     
+    .plan-box{
+        padding-top: 10px;
+    }
+    
+    .plan-box div:first-child{
+        padding:10px 0;
+    }
+    
+    #plan-box-custom{
+        padding-top:20px;
+        padding-bottom: 10px;
+    }
+    
+    #plan-box-custom h3{
+        font-size: 180%;
+    }
     
 }
     
