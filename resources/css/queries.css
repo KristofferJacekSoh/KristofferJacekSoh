@@ -10,9 +10,6 @@
     
     .row{ padding:0 2%; }
     
-    .modular-img{
-        margin-left:0;
-    }
 }
 
 /*ipad in portrait mode 768-1023px*/
@@ -21,6 +18,9 @@
     body{ font-size:18px;}
     section{ padding: 60px 0;}
     
+    .section-modular{
+        padding: 100px 0;
+    }
     
     .main-nav{display:block;}
     
@@ -87,12 +87,18 @@
     h2{font-size:150%;}
     h3{font-size:110%;}
     
+    
+    .section-modular{
+        padding: 60px 0;
+    }
     .modular-text{
         text-align:center;
     }
     
-    .modular-img{
-        margin:0;
+    .bx-wrapper {
+        margin-top:100px;
+        padding:0;
+        vertical-align: bottom;
     }
     
     .section-easy-setup h3{
