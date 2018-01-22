@@ -261,7 +261,7 @@ header{
 
 .section-modular{
     background-color:#eee;
-    padding-bottom: 30px;
+    padding:150px 0;
 }
 
 
@@ -285,21 +285,7 @@ header{
     height: 80px;
 }
 
-.modular-img{
-    display:inline-block;
-    height: 300px;
-    width:auto;
-    text-align: center;
-    vertical-align: middle;
-    margin-top:-50px;
-    margin-left:30%;
-    opacity: 1;
-}
 
-.modular-img-box{
-    display:inline-block;
-    text-align: center;
-}
 /*--------------------------------------------------------------------*/
 /* FEATURES */
 

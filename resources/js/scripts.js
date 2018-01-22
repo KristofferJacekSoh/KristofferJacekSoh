@@ -1,7 +1,12 @@
 
 $(document).ready(function() {
- "use strict";
+    "use strict";
 
+    
+/*MODULAR IMAGE ANIMATION*/
+
+    $('.bxslider').bxSlider();
+    
 /*---------------------------------
  STICKY NAV*/
     
@@ -72,34 +77,10 @@ $(document).ready(function() {
                 icon.addClass('ion-navicon-round');
                 icon.removeClass('ion-close-round');
             }
-        })
-    
-/*MODULAR IMAGE ANIMATION*/
-        
-
-    
-//Animation runs only when tab is in focus
-   
-    var swapInterval = 0;
-    var counter = 0;
-    swapInterval = setInterval(function(){counter = modularImageSwap(counter);}, 3000);
-    
-    var visProp = getHiddenProp();
-    if (visProp) {
-        var evtname = visProp.replace(/[H|h]idden/,'') + 'visibilitychange';
-        $(document).bind(evtname,function(){
-            
-            if(!document.hidden){
-               if(!swapInterval){
-                   swapInterval = setInterval(function(){counter = modularImageSwap(counter);}, 3000);
-               }
-            } else{
-                clearInterval(swapInterval);
-                swapInterval=0;
-            }   
         });
-    }
+    
 
+    
     
 /*Images fade in on scroll to reduce first load times*/
     
@@ -131,67 +112,3 @@ $(document).ready(function() {
             $('header').css('background-attachment', 'scroll');
         }
 });
-
-var fadeInterval=null;
-var fadeCounter=0;
-
-function modularImageSwap(inCounter){
-    
-    var modularImageSource = [
-        "resources/img/Modular1.png",
-        "resources/img/Modular2.png",
-        "resources/img/Modular3.png",
-        "resources/img/Modular4.png",
-        "resources/img/Modular5.png",
-        "resources/img/Modular6.png",
-        "resources/img/Modular7.png"
-    ];
-    
-    //Time taken for animation to complete
-    var animationTime = 250;
-    
-    /*Fade Out*/
-    fadeCounter = 0;
-    fadeInterval = setInterval(function(){
-        $('.js--modular-img').css('opacity', (100 - fadeCounter)/100);
-        $('.js--modular-img').css({"-webkit-transform":"translate("+fadeCounter+"px,0)"});
-        fadeCounter+=1;
-        if(fadeCounter === 100){clearInterval(fadeInterval);}
-    }, animationTime/100);
-    
-    /*Fade In*/
-    setTimeout(function(){
-    $('.js--modular-img').attr('src', modularImageSource[inCounter]);
-    fadeCounter = 0;
-    fadeInterval = setInterval(function(){
-        $('.js--modular-img').css('opacity', (fadeCounter)/100);
-        $('.js--modular-img').css({"-webkit-transform":"translate("+(fadeCounter-100)+"px,0)"});
-        fadeCounter+=1;
-        if(fadeCounter === 100){clearInterval(fadeInterval);}
-    }, animationTime/100);
-    }, animationTime*2);
-    
-    //Return to the first image after reaching the last one
-    if (inCounter === 6) {inCounter = 0;}
-    else {inCounter++;}
-    
-    return inCounter;
-}
-
-function getHiddenProp(){
-    var prefixes = ['webkit','moz','ms','o'];
-    
-    // if 'hidden' is natively supported just return it
-    if ('hidden' in document) return 'hidden';
-    
-    // otherwise loop over all the known prefixes until we find one
-    for (var i = 0; i < prefixes.length; i++){
-        if ((prefixes[i] + 'Hidden') in document) 
-            return prefixes[i] + 'Hidden';
-    }
-
-    // otherwise it's not supported
-    return null;
-}
-
-
