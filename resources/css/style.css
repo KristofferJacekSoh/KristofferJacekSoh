@@ -299,8 +299,11 @@ header{
 /*--------------------------------------------------------------------*/
 
 /* EASY-SETUP */
+
 .section-easy-setup{
     background-color:#eee;
+    padding-top: 120px;
+    padding-bottom: 0;
 }
 
 .section-easy-setup h3{
@@ -309,6 +312,14 @@ header{
 
 .section-easy-setup p{
     text-align: right;
+}
+
+.section-easy-setup img{
+    display: block;
+    height: 450px;
+    width: auto;
+    vertical-align: middle;
+    margin-top: -50%;
 }
 
 /*--------------------------------------------------------------------*/
@@ -522,11 +533,11 @@ footer p{
 /* ANIMATIONS */
 
 
-.js--wp1, .js--wp2{
+.js--wp1, .js--wp2, .js--wp3{
     opacity: 0;
     animation-duration: 1s;
 }
 
-.js--wp1.animated, .js--wp2.animated {
+.js--wp1.animated, .js--wp2.animated, .js--wp3.animated {
     opacity: 1;
 }

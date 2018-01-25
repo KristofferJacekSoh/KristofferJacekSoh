@@ -90,8 +90,14 @@ $(document).ready(function() {
             offset: '100%'
         });
     
-        $('.js--wp2').waypoint(function(direction) {
+        $('#shop-info-screen').waypoint(function(direction) {
            $('.js--wp2').addClass('animated fadeIn'); 
+        }, {
+            offset: '100%'
+        });
+    
+        $('.js--wp3').waypoint(function(direction) {
+           $('.js--wp3').addClass('animated fadeIn'); 
         }, {
             offset: '100%'
         });
