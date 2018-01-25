@@ -1,7 +1,12 @@
 
-$(document).ready(function () {
- 
+$(document).ready(function() {
+    "use strict";
 
+    
+/*MODULAR IMAGE ANIMATION*/
+
+    $('.bxslider').bxSlider();
+    
 /*---------------------------------
  STICKY NAV*/
     
@@ -15,7 +20,6 @@ $(document).ready(function () {
         },
         {offset: '60px;'}
     );
-    
     
         
 /*---------------------------------
@@ -51,7 +55,7 @@ $(document).ready(function () {
                   } else {
                     $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
                     $target.focus(); // Set focus again
-                  };
+                  }
                 });
               }
             }
@@ -59,7 +63,8 @@ $(document).ready(function () {
 
           });
 
-        /*MOBILE NAV*/
+/*MOBILE NAV*/
+    
         $('.js--nav-icon').click(function(){
             var nav =$('.js--main-nav');
             var icon=$('.js--nav-icon i');
@@ -72,9 +77,33 @@ $(document).ready(function () {
                 icon.addClass('ion-navicon-round');
                 icon.removeClass('ion-close-round');
             }
-        })
+        });
+    
 
-        //To fix a bug of the links not reappearing after widening the browser if they minimised with the mobile nav icon
+    
+    
+/*Images fade in on scroll to reduce first load times*/
+    
+        $('.js--wp1').waypoint(function(direction) {
+           $('.js--wp1').addClass('animated fadeIn'); 
+        }, {
+            offset: '100%'
+        });
+    
+        $('#shop-info-screen').waypoint(function(direction) {
+           $('.js--wp2').addClass('animated fadeIn'); 
+        }, {
+            offset: '100%'
+        });
+    
+        $('.js--wp3').waypoint(function(direction) {
+           $('.js--wp3').addClass('animated fadeIn'); 
+        }, {
+            offset: '100%'
+        });
+
+
+/*To fix a bug of the links not reappearing after widening the browser if they minimised with the mobile nav icon*/
         $(window).resize(function(){
             var nav =$('.js--main-nav');
             var w = $(window).width();
@@ -83,23 +112,9 @@ $(document).ready(function () {
          }
          });
     
-        /*Change background-attachment to scrolling if ios is detected*/
+/*Change background-attachment to scrolling if ios is detected*/
     
         if(!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)){
             $('header').css('background-attachment', 'scroll');
         }
 });
-                  
-
-
-function openTab(clickedTab) {
-	var thisTab = $(".tabbed-box .tabs a").index(clickedTab);
-    var w = $(window).width();
-    
-	$(".tabbed-box .tabs li a").removeClass("active animated fadeIn");
-	$(".tabbed-box .tabs li a:eq("+thisTab+")").addClass("active animated fadeIn"); //makes the tab appear and animate
-	$(".tabbed-box .tabbed-content").hide();
-	$(".tabbed-box .tabbed-content:eq("+thisTab+")").show(); 
-	currentTab = thisTab;
-    
-}

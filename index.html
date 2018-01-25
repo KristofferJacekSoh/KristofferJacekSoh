@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/jquery.bxslider.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
         
         
@@ -52,12 +53,20 @@
                     <p class="modular-text">Swap between different readers and receivers, or even customise your own, to perfectly suit your operational needs.</p>
                 </div>
                 <div class="col span-1-of-2 modular-img-box">
-                    <img src="resources/img/Modular1.png" alt="Modular Cycling Image" class="modular-img">
+                    <ul class="bxslider">
+                        <li><img src="resources/img/Modular1.png" alt="Modular Cycling Image"></li>
+                        <li><img src="resources/img/Modular2.png" alt="Modular Cycling Image"></li>
+                        <li><img src="resources/img/Modular3.png" alt="Modular Cycling Image"></li>
+                        <li><img src="resources/img/Modular4.png" alt="Modular Cycling Image"></li>
+                        <li><img src="resources/img/Modular5.png" alt="Modular Cycling Image"></li>
+                        <li><img src="resources/img/Modular6.png" alt="Modular Cycling Image"></li>
+                        <li><img src="resources/img/Modular7.png" alt="Modular Cycling Image"></li>
+                    </ul>
                 </div>
             </div>
         </section>
         <section class="section-features js--section-features">
-            <div class="row">
+            <div class="row js--wp1">
                 <div class="col span-1-of-3">
                     <img src="resources/img/ReaderIcon.svg" alt="Accessible Icon" class="accessible-icon">
                     <h3>Accessible</h3>
@@ -80,20 +89,22 @@
         
         <section class="section-easy-setup">
                 <div class="row animated fadeIn">
-                    <div class="col span-1-of-2">
+                    <div class="col span-2-of-4">
                         <h3>Going cashless has never been easier</h3>
                         <p>Choose from our range of existing configurations to start accepting payments in just a few simple steps.  No landlines, no infrastructure and no bulky items required. Our user friendly interface makes collecting and tracking transactions for your store(s) a breeze. </p>
                     </div>
-                    <div class="col span-1-of-2">
-
+                    <div class="col span-1-of-4">
+                        <img src="resources/img/Appscreen1.png" alt="Shop Information Screen" id="shop-info-screen" class="js--wp2">
                     </div>
-
+                    <div class="col span-1-of-4">
+                        <img src="resources/img/Appscreen2.png" alt="Banking Screen" class="js--wp2">
+                    </div>
                 </div>
         </section>
         <section class="section-configuration">
                 <div class="row animated fadeIn">
                     <div class="col span-1-of-2">
-                        <img src="resources/img/Configuration-min.png" alt="Configuration Image" class="config-img">
+                        <img src="resources/img/Configuration-min.png" alt="Configuration Image" class="config-img js--wp3">
                     </div>
                     <div class="col span-1-of-2 config-text">
                         <h3>Can't find a configuration that fits?</h3>
@@ -106,7 +117,7 @@
                 <p>No complex contracts, no lock in periods. Go cashless with hardware costs from as low as $5/month.</p>
                     <div class="row">
                         
-                        <div class="col span-1-of-3">
+                        <div class="col span-1-of-4">
                             <div class="plan-box">
                                 <div>
                                     <h3>Beep Mini</h3>
@@ -117,13 +128,13 @@
                                         <li> <i class="ion-ios-checkmark-empty icon-small"></i>Connects to any Bluetooth and Internet enabled device</li>
                                         <li> <i class="ion-ios-checkmark-empty icon-small"></i>Accepts QR payments</li>
                                         <li> <i class="ion-ios-checkmark-empty icon-small"></i>Accepts stored value cards (EZlink)</li>
-                                        <li> <i class="ion-ios-checkmark-empty icon-small"></i>Accepts Credit Cards with a One-Time Password Authentication</li>
+                                        <li> <i class="ion-ios-checkmark-empty icon-small"></i>Accepts Credit Cards with a One-Time Password</li>
                                         <li> <i class="ion-ios-checkmark-empty icon-small"></i>Support for the device</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col span-1-of-3">
+                        <div class="col span-1-of-4">
                             <div class="plan-box">
                                 <div>
                                     <h3>Beep Duo</h3>
@@ -140,7 +151,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col span-1-of-3">
+                        <div class="col span-1-of-4">
                             <div class="plan-box">
                                 <div id="plan-box-all-in-one">
                                     <h3>All-in-One</h3>
@@ -148,10 +159,25 @@
                                 </div>
                                 <div>
                                     <ul>
-                                        <li> <i class="ion-ios-checkmark-empty icon-small"></i>All-in-One package, no connections to other devices needed</li>
+                                        <li> <i class="ion-ios-checkmark-empty icon-small"></i>All-in-One package, no other devices needed</li>
                                         <li> <i class="ion-ios-checkmark-empty icon-small"></i>Accepts QR payments</li>
                                         <li> <i class="ion-ios-checkmark-empty icon-small"></i>Accepts stored value cards (EZlink)</li>
                                         <li> <i class="ion-ios-checkmark-empty icon-small"></i>Accepts Credit Cards easily with a tap or a wave</li>
+                                        <li> <i class="ion-ios-checkmark-empty icon-small"></i>Support for the device</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-4">
+                            <div class="plan-box">
+                                <div id="plan-box-custom">
+                                    <h3>Custom</h3>
+                                </div>
+                                <div id="plan-box-custom-list">
+                                    <ul>
+                                        <li> <i class="ion-ios-checkmark-empty icon-small"></i>Hardware fitted to your specifications</li>
+                                        <li> <i class="ion-ios-checkmark-empty icon-small"></i>Software that is adapted to your needs</li>
+                                        <li> <i class="ion-ios-checkmark-empty icon-small"></i>Price dependent on the solution</li>
                                         <li> <i class="ion-ios-checkmark-empty icon-small"></i>Support for the device</li>
                                     </ul>
                                 </div>
@@ -199,6 +225,7 @@
     <!-- Main scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="vendors/js/jquery.bxslider.js"></script>
     <script src="resources/js/scripts.js"></script>
         
     <!-- Google Analytics Script-->
