@@ -124,7 +124,7 @@ a:active{
 .logo {
     float: left;
     margin-top: 2vh;
-    height: 10vh;
+    height: 60px;
     width: auto;
     
 }
@@ -132,7 +132,7 @@ a:active{
 .logo-colour {
     float:left;
     display:none;
-    height:50px;
+    height:40px;
     width:auto;
     margin: 5px 0;
 }
@@ -174,7 +174,7 @@ header{
 .hero-box{
     position: absolute;
     width: 1140px;
-    top: 30%;
+    top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -222,7 +222,7 @@ header{
 }
 
 .sticky .main-nav{
-    margin-top:18px;
+    margin-top:10px;
 }
 
 .sticky .main-nav li a:link,
@@ -244,7 +244,7 @@ header{
 
 .mobile-nav-icon{
     float:right;
-    margin-top:25px;
+    margin-top:2vh;
     cursor:pointer;
     display:none;
 }
