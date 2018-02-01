@@ -10,15 +10,9 @@
     
     .row{ padding:0 2%; }
     
-    .section-easy-setup{
-        padding-top:80px;
-    }
+
     
-    .section-easy-setup img{
-        height:350px;
-        margin-top:-30%;
-    }
-    
+
 }
 
 /*ipad in portrait mode 768-1023px*/
@@ -37,10 +31,7 @@
         height:250px;
     }
     
-    .section-easy-setup img{
-        height:300px;
-    }
-    
+
 
 }
 
@@ -111,6 +102,10 @@
         text-align:center;
     }
     
+    .section-easy-setup{
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
     
     .section-easy-setup h3{
         text-align: center;
@@ -136,15 +131,6 @@
         margin:0 auto;
     }
     
-    .section-easy-setup img{
-        margin:0 auto;
-        height:400px;
-        transform: none;
-    }
-    
-    #shop-info-screen{
-        display:none;
-    }
     
     .section-pricing ul li{
        font-size:100%;

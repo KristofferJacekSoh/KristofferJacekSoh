@@ -7,6 +7,9 @@ $(document).ready(function() {
 
     $('.bxslider').bxSlider();
     
+/*EASY SETUP IMAGE ANIMATION*/    
+    $('.bxslider2').bxSlider2();
+    
 /*---------------------------------
  STICKY NAV*/
     
@@ -90,17 +93,12 @@ $(document).ready(function() {
             offset: '100%'
         });
     
-        $('#shop-info-screen').waypoint(function(direction) {
+        $('.js--wp2').waypoint(function(direction) {
            $('.js--wp2').addClass('animated fadeIn'); 
         }, {
             offset: '100%'
         });
     
-        $('.js--wp3').waypoint(function(direction) {
-           $('.js--wp3').addClass('animated fadeIn'); 
-        }, {
-            offset: '100%'
-        });
 
 
 /*To fix a bug of the links not reappearing after widening the browser if they minimised with the mobile nav icon*/

@@ -1,0 +1,130 @@
+/** VARIABLES
+===================================*/
+/** RESET AND LAYOUT
+===================================*/
+.bx-wrapper2 {
+  position: relative;
+  vertical-align: middle;
+  margin-top:-22%;
+  margin-left:20%;
+  padding: 0;
+  height:300px;
+  width:auto;
+  *zoom: 1;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+
+.bx-wrapper2 img {
+  max-width: 100%;
+  display: block;
+}
+
+.bxslider2 {
+  margin: 0;
+  padding: 0;
+}
+
+ul.bxslider2 {
+  list-style: none;
+}
+.bx-viewport2 {
+  /*fix other elements on the page moving (on Chrome)*/
+  -webkit-transform: translatez(0);
+}
+
+@media only screen and (max-width: 1023px){
+    .bx-wrapper2{
+        margin-top:-20%;
+        margin-left:15%;
+    }
+    
+}
+
+@media only screen and (max-width: 767px){
+    .bx-wrapper2{
+        margin-left: 16%;
+        margin-top: 0;
+        height:100%;
+    }
+    .bx-wrapper2 img{
+        max-width:80%;
+    }
+}
+
+@media only screen and (max-width: 480px)
+{
+    .bx-wrapper2{
+
+
+    }
+}
+/** THEME
+===================================*/
+.bx-wrapper2 {
+  background: #eee;
+}
+.bx-wrapper2 .bx-pager,
+.bx-wrapper2 .bx-controls-auto {
+ 
+}
+/* LOADER */
+
+
+/* AUTO CONTROLS (START / STOP) */
+.bx-wrapper2 .bx-controls-auto {
+  text-align: center;
+}
+.bx-wrapper2 .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  outline: 0;
+  background: url('images/controls.png') -86px -11px no-repeat;
+  margin: 0 3px;
+}
+.bx-wrapper2 .bx-controls-auto .bx-start:hover,
+.bx-wrapper2 .bx-controls-auto .bx-start.active,
+.bx-wrapper2 .bx-controls-auto .bx-start:focus {
+  background-position: -86px 0;
+}
+.bx-wrapper2 .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 9px;
+  height: 11px;
+  outline: 0;
+  background: url('images/controls.png') -86px -44px no-repeat;
+  margin: 0 3px;
+}
+.bx-wrapper2 .bx-controls-auto .bx-stop:hover,
+.bx-wrapper2 .bx-controls-auto .bx-stop.active,
+.bx-wrapper2 .bx-controls-auto .bx-stop:focus {
+  background-position: -86px -33px;
+}
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.bx-wrapper2 .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+  text-align: left;
+  width: 80%;
+}
+.bx-wrapper2 .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+  right: 0;
+  width: 35px;
+}
+/* IMAGE CAPTIONS */
+.bx-wrapper2 .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666;
+  background: rgba(80, 80, 80, 0.75);
+  width: 100%;
+}
+.bx-wrapper2 .bx-caption span {
+  color: #fff;
+  font-family: Arial;
+  display: block;
+  font-size: .85em;
+  padding: 10px;
+}
