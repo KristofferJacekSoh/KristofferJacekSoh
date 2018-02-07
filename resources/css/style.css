@@ -164,7 +164,7 @@ a:active{
 /* HEADER */
 
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-img2-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(img/hero-img2-min.jpg);
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -294,6 +294,10 @@ header{
     margin: 15px auto;
     height: 80px;
     width: auto;
+}
+
+.section-features i{
+    margin:15px;
 }
 
 /*--------------------------------------------------------------------*/

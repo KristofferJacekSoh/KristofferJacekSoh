@@ -42,7 +42,11 @@
     section{padding:30px 0;}
     
     .row,
-    hero-text-box{padding:0, 4%;}
+    hero-box{padding:0, 3%;}
+    
+    .subtitle{
+        padding:0 2%;
+    }
     
     p{text-align: center}
     
@@ -90,7 +94,10 @@
         display: inline-block;
     }
     
-    h1{font-size:180%;}
+    h1{
+        font-size:180%;
+        margin-left:2%;
+    }
     h2{font-size:150%;}
     h3{font-size:110%;}
     
@@ -113,6 +120,7 @@
 
     .section-easy-setup p{
         text-align: left;
+        margin:0 2%;
     }
     
     .section-configuration h3{
@@ -121,6 +129,7 @@
 
     .section-configuration p{
         text-align: left;
+        margin:0 2%;
     }
     
     .config-text{
