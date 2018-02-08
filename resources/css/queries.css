@@ -140,6 +140,11 @@
         margin:0 auto;
     }
     
+    .section-pricing p{
+        text-align: center;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
     
     .section-pricing ul li{
        font-size:100%;
