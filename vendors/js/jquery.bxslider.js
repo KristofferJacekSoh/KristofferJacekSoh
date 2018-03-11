@@ -67,7 +67,7 @@
 
     // AUTO
     auto: true,
-    pause: 2000,
+    pause: 3000,
     autoStart: true,
     autoDirection: 'next',
     stopAutoOnClick: false,
