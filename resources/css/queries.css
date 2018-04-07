@@ -28,7 +28,8 @@
     .main-nav{display:block;}
     
     .config-img{
-        height:250px;
+        margin-left:1em;
+        height:200px;
     }
     
 
@@ -140,40 +141,7 @@
         margin:0 auto;
     }
     
-    .section-pricing p{
-        text-align: center;
-        margin-left: 3%;
-        margin-right: 3%;
-    }
     
-    .section-pricing ul li{
-       font-size:100%;
-    }
-    
-    .plan-box{
-        padding-top: 10px;
-    }
-    
-    .plan-box div:first-child{
-        padding:10px 0;
-    }
-    
-    #plan-box-custom{
-        padding-top:20px;
-        padding-bottom: 10px;
-    }
-    
-    #plan-box-custom h3{
-        font-size: 180%;
-    }
-    
-    .plan-price{
-        font-weight: 300;
-    }
-    
-    .plan-price span{
-        font-size: 70%;
-    }
     
 }
     
