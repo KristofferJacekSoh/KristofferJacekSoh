@@ -29,9 +29,9 @@
     
     
     .hero-box {
-        width: 100%;
         padding:0 2%;
-        margin-left:0;
+        top:30%;
+        margin-left:-5%;
     }
     
     .row{ padding:0 2%; }
@@ -44,8 +44,8 @@
     body{ font-size:18px;}
     section{ padding: 60px 0;}
     
-    .section-modular{
-        padding: 100px 0;
+    .hero-box {
+        margin-left:0%;
     }
     
     .main-nav{display:block;}
@@ -67,6 +67,11 @@
     
     .row,
     hero-box{padding:0, 3%;}
+    
+    .hero-box{
+        width: 90%;
+        top: 30%;
+    }
     
     .subtitle{
         padding:0 2%;
@@ -172,7 +177,11 @@
 @media only screen and (max-width: 480px){
     section{padding:25px 0;}
     
-
+    .hero-box{
+        width:100%;
+        top: 25%;
+    }
+    
     .logo-colour{
         height:3vh;
         margin-top:11px;
