@@ -1,17 +1,40 @@
+/*big tablet to 1200px, width smaller than pixel row*/
+@media only screen and (max-width: 1500px) {
 
+    .logo {
+    margin-left:0;
+    }
+    
+    .main-nav{
+    margin-right: 0;
+    }
+
+    h1{
+        font-size:270%;
+    }
+    
+    .hero-box{
+        margin-left:-5%;
+    }
+    
+    .subtitle{
+        font-size:110%;
+    }
+
+}
 
 /*big tablet to 1200px, width smaller than pixel row*/
 @media only screen and (max-width: 1200px) {
 
+    
+    
     .hero-box {
         width: 100%;
         padding:0 2%;
+        margin-left:0;
     }
     
     .row{ padding:0 2%; }
-    
-
-    
 
 }
 
@@ -27,7 +50,7 @@
     
     .main-nav{display:block;}
     
-    .config-img{
+    .future-proof-img{
         margin-left:1em;
         height:200px;
     }
@@ -104,40 +127,40 @@
     
     
     .section-modular{
-        padding: 60px 0;
+        padding: 40px 0;
     }
     .modular-text{
         text-align:center;
     }
     
-    .section-easy-setup{
+    .section-user-friendly{
         padding-top: 60px;
         padding-bottom: 20px;
     }
     
-    .section-easy-setup h3{
+    .section-user-friendly h3{
         text-align: center;
     }
 
-    .section-easy-setup p{
+    .section-user-friendly p{
         text-align: left;
         margin:0 2%;
     }
     
-    .section-configuration h3{
+    .section-future-proof h3{
         text-align: center;
     }
 
-    .section-configuration p{
+    .section-future-proof p{
         text-align: left;
         margin:0 2%;
     }
     
-    .config-text{
+    .future-proof-text{
         padding:0;
     }
     
-    .config-img{
+    .future-proof-img{
         margin:0 auto;
     }
     

@@ -71,12 +71,12 @@ h3{
 
 
 h1{
-    font-size: 300%;
+    font-size: 320%;
     font-weight: 300;
     color:#fff;
     word-spacing: 3px;
     letter-spacing: 1px;
-    margin-bottom:5px;
+    margin-bottom:15px;
 }
 
 .subtitle{
@@ -124,6 +124,7 @@ a:active{
 .logo {
     float: left;
     margin-top: 2vh;
+    margin-left: -5%;
     height: 60px;
     width: auto;
     
@@ -164,7 +165,7 @@ a:active{
 /* HEADER */
 
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/hero-img2-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(img/hero-img.png);
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -173,11 +174,11 @@ header{
 
 .hero-box{
     position: absolute;
-    width: 1140px;
-    top: 40%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    width: 800px;
+    top: 38%;
+    left: 25%;
+    -webkit-transform: translate(-25%, -50%);
+    transform: translate(-25%, -50%);
 }
 
 
@@ -185,6 +186,7 @@ header{
     float: right;
     list-style: none;
     margin-top:4vh;
+    margin-right: -12%
 }
 
 .main-nav li{
@@ -260,12 +262,13 @@ header{
 /* MODULAR */
 
 .section-modular{
-    padding:150px 0;
+    background-color: #eee;
+    padding:50px 0;
 }
 
 
 .modular-text{
-    margin-top:30px;
+    margin-top:70px;
     text-align: left;
 }
 
@@ -273,6 +276,10 @@ header{
     margin-right:0;
     margin-bottom: 0;
     text-align: center;
+}
+
+.section-modular p{
+    margin-top: 30px;
 }
 
 
@@ -283,6 +290,74 @@ header{
     margin-top: -5px;
     vertical-align: middle;
     height: 50px;
+}
+
+
+
+
+/*--------------------------------------------------------------------*/
+
+/* INTEROPERABLE */
+
+.section-interoperable{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.beepmini{
+    height:400px;
+    width:auto;
+}
+
+.interoperable-text{
+    margin-top:12%;
+}
+
+/*--------------------------------------------------------------------*/
+
+/* user-friendly */
+
+.section-user-friendly{
+    background-color: #eee;
+    padding:120px 0;
+}
+
+.section-user-friendly h3{
+    text-align: left;
+}
+
+.section-user-friendly p{
+    text-align: left;
+}
+
+
+
+
+/*--------------------------------------------------------------------*/
+
+/* FUTURE PROOF */
+
+.section-future-proof{
+}
+
+.section-future-proof h3{
+    text-align: center;
+}
+
+.section-future-proof p{
+    text-align: center;
+}
+
+.future-proof-img{
+    display: block;
+    margin-left: 35%;
+    height: 330px;
+    width: auto;
+}
+
+.future-proof-text{
+    margin-top:30px;
+    text-align: center;
 }
 
 
@@ -310,62 +385,66 @@ header{
     width: auto;
 }
 
-/*--------------------------------------------------------------------*/
-
-/* EASY-SETUP */
-
-.section-easy-setup{
-    
-    padding:120px 0;
-}
-
-.section-easy-setup h3{
-    text-align: left;
-}
-
-.section-easy-setup p{
-    text-align: left;
-}
-
-
-
-
-/*--------------------------------------------------------------------*/
-
-/* CONFIGURATION */
-
-.section-configuration{
-    background-color:#eee;
-    padding-bottom: ;
-}
-
-.section-configuration h3{
-    text-align: left;
-}
-
-.section-configuration p{
-    text-align: left;
-}
-
-.config-img{
-    display: block;
-    height: 330px;
-    width: auto;
-}
-
-.config-text{
-    margin-top:30px;
-}
-
-/*--------------------------------------------------------------------*/
-
-
 
 /*--------------------------------------------------------------------*/
 /* CONTACT FORM */
 
 .section-contact-us{
+    padding: 150px 0;
 }
+
+
+/*-----------------------------------------------------*/
+/* FORM */
+
+#contact-row{
+    margin:0.5em 0;
+}
+
+.contact-form {
+    width:60%;
+    margin:1em auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width:100%;
+    padding:7px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+
+textarea {
+    height:100px;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+input[type=submit]{
+    width:6em;
+    cursor:pointer;
+}
+
+.js--category-merchant{
+    display:none;
+}
+
+.js--category-others{
+    display:none;
+}
+
+.js--find-us-others{
+    display:none;
+}
+
 
 /*--------------------------------------------------------------------*/
 /* FOOTER */

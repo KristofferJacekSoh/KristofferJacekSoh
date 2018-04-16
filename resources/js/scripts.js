@@ -115,4 +115,41 @@ $(document).ready(function() {
         if(!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)){
             $('header').css('background-attachment', 'scroll');
         }
+
+
+
+/*Make form elements appear when certain choices are chosen*/
+
+$("#category").on('change', function() {
+        if(this.value==="merchant"){
+            $(".js--category-merchant").show();
+        } else{
+            $(".js--category-merchant").hide();
+        }
+    });
+
+$("#category").on('change', function() {
+        if(this.value==="other"){
+            $(".js--category-others").show();
+        } else{
+            $(".js--category-others").hide();
+        }
+    });
+
+$("#find-us").on('change', function() {
+        if(this.value==="other"){
+            $(".js--find-us-others").show();
+        } else{
+            $(".js--find-us-others").hide();
+        }
+    });
+    
+
+
+    var $inputs = $('input[name=email],input[name=phone]');
+    $inputs.on('input', function () {
+        // Set the required property of the other input to false if this input is not empty.
+        $inputs.not(this).prop('required', !$(this).val().length);
+    });
+    
 });
