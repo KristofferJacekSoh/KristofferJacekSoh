@@ -5,10 +5,10 @@
 .bx-wrapper {
   position: relative;
   vertical-align: middle;
-  margin-top:-10%;
-  margin-left:15%;
+  margin-top:0;
+  margin-left:0;
   padding: 0;
-  height: 270px;
+  height: 300px;
   width: 100%;
   *zoom: 1;
   -ms-touch-action: pan-y;
@@ -16,7 +16,8 @@
 }
 
 .bx-wrapper img {
-  height: 320px;
+  height: 300px;
+    width: auto;
   display: block;
 }
 .bxslider {
