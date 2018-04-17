@@ -156,7 +156,7 @@
     }
     
     .beepmini{ 
-        margin-top:15%;
+        margin-top:10%;
     }
     
     .section-user-friendly{
@@ -183,21 +183,19 @@
     }
     
     .future-proof-text{
-        padding:0;
+        padding:0 2%;
     }
     
     .future-proof-img{
         margin:0 auto;
     }
     
-    
-    
 }
     
 /* small phones 0-480px */
 @media only screen and (max-width: 480px){
     
-    section{padding:25px 0;}
+    section{padding:40px 0;}
     
     header{
         background-position: center bottom;
