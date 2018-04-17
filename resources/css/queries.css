@@ -136,22 +136,22 @@
     
     
     .section-modular{
-        
+        padding-top:17%;
     }
     .modular-text{
-        margin-left:0;
-        width:100%;
+        margin:0 3%;
+        width:94%;
         text-align:center;
     }
     
     #modular-img-box{
         float:left;
         width:100%;
-        margin-top:7%;
+        margin-top:10%;
     }
     
     .beepmini{ 
-        margin-top:5%;
+        margin-top:15%;
     }
     
     .section-user-friendly{
