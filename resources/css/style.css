@@ -264,13 +264,17 @@ header{
 
 .section-modular{
     background-color: #eee;
-    padding:50px 0;
+    padding:0;
+    
 }
 
 
 .modular-text{
-    margin-top:70px;
+    display:inline-block;
+    margin-top:7.5%;
+    margin-left:5%;
     text-align: left;
+    width:42%;
 }
 
 .section-modular h2{
@@ -293,6 +297,11 @@ header{
     height: 50px;
 }
 
+#modular-img-box{
+    float:right;
+    display:block;
+    width:50%;
+}
 
 
 

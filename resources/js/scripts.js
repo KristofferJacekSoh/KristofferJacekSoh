@@ -10,6 +10,9 @@ $(document).ready(function() {
 /*EASY SETUP IMAGE ANIMATION*/    
     $('.bxslider2').bxSlider2();
     
+$(window).on('resize', function(){
+       $('.section-modular').height($('.bx-wrapper').height());
+    }).trigger('resize');
 /*---------------------------------
  STICKY NAV*/
     
@@ -103,6 +106,7 @@ $(document).ready(function() {
 
 /*To fix a bug of the links not reappearing after widening the browser if they minimised with the mobile nav icon*/
         $(window).resize(function(){
+            
             var nav =$('.js--main-nav');
             var w = $(window).width();
             if(w >= 768 && nav.is(':hidden')) {
