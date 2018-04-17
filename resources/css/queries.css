@@ -77,7 +77,8 @@
     header{
         height:70vh;
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(img/hero-img-small.png);
-        background-position: 50% 70%;
+        background-position: 50% 40%;
+        background-attachment: scroll;
     }
     
     .subtitle{
@@ -198,7 +199,7 @@
     section{padding:40px 0;}
     
     header{
-        background-position: center bottom;
+        background-position: 50% 0%;
     }
     
     .hero-box{
