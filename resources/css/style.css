@@ -395,12 +395,20 @@ header{
     width: auto;
 }
 
+/*--------------------------------------------------------------------*/
+/* SUTD */
+
+#sutd{
+    display:block;
+    height:100px;
+    margin:2% auto;
+}
 
 /*--------------------------------------------------------------------*/
 /* CONTACT FORM */
 
 .section-contact-us{
-    padding: 150px 0;
+    padding: 0;
 }
 
 
