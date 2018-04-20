@@ -121,7 +121,117 @@
             </div>
         </section>
         <section class="section-contact-us" id="contact-us">
-            <div class="typeform-widget" data-url="https://bawfen.typeform.com/to/qRTTxs" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=qRTTxs&utm_source=typeform.com-10241509-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
+            <div class="row">
+                <h2>Ready to cut the cord?</h2>
+                <h3>Get in touch using the form below!</h3>
+            </div>
+            <div class="row">
+                <form method="post" action="http://localhost:8000/contact_form/" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="category">Category</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="category" id="category" required>
+                                <option value="Acquirer">Acquirer</option>
+                                <option value="Consumer" selected>Consumer</option>
+                                <option value="Developer">Developer</option>
+                                <option value="Merchant">Merchant</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row js--category-merchant">
+                        <div class="col span-1-of-3">
+                            <label>Merchant Type</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="merchant_type" id="merchant-type">
+                        </div>
+                    </div>
+                    <div class="row js--category-others">
+                        <div class="col span-1-of-3">
+                            <label>Other</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="category_others" id="category-others">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name"  required>
+                        </div>
+                    </div>
+                    <div class="row" id="contact-row">
+                        <p>Contact details (either phone number or email address)</p>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email"  required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="phone">Phone number</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="phone" id="phone"  required pattern="[3689][0-9]{7}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find_us">How did you find out about us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find_us" id="find-us">
+                                <option value="Friends" selected>Friends</option>
+                                <option value="Search">Search Engine</option>
+                                <option value="Ad">Advertisement</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row js--find-us-others">
+                        <div class="col span-1-of-3">
+                            <label>Other</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="others" id="others">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Future Updates</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="update" id="update" checked>Keep me updated
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" name="submit" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
         </section>
         <footer>
             <!--
