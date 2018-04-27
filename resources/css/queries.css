@@ -170,7 +170,7 @@
         padding-bottom: 20px;
     }
     
-    .section-user-friendly h3{
+    .section-user-friendly h2{
         text-align: center;
     }
 
@@ -179,7 +179,7 @@
         margin:0 2%;
     }
     
-    .section-future-proof h3{
+    .section-future-proof h2{
         text-align: center;
     }
 
@@ -217,8 +217,8 @@
         font-size: 130%;
     }
     
-    h2{font-size:100%;}
-    h3{font-size:100%;}
+    h2{font-size:120%;}
+    h3{font-size:110%;}
     
     .subtitle{font-size:100%;}
     

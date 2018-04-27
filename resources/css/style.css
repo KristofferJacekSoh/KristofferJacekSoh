@@ -271,10 +271,10 @@ header{
 
 .modular-text{
     display:inline-block;
-    margin-top:7.5%;
-    margin-left:5%;
-    text-align: left;
-    width:42%;
+    margin-top:10%;
+    margin-left:7.5%;
+    text-align: center;
+    width:35%;
 }
 
 .section-modular h2{
@@ -329,10 +329,10 @@ header{
 
 .section-user-friendly{
     background-color: #eee;
-    padding:120px 0;
+    padding:40px 0;
 }
 
-.section-user-friendly h3{
+.section-user-friendly h2{
     text-align: left;
 }
 
@@ -340,7 +340,9 @@ header{
     text-align: left;
 }
 
-
+.user-friendly-text{
+    margin-top:10%;
+}
 
 
 /*--------------------------------------------------------------------*/
