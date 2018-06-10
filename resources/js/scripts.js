@@ -125,7 +125,7 @@ $(window).on('resize', function(){
 /*Make form elements appear when certain choices are chosen*/
 
 $("#category").on('change', function() {
-        if(this.value==="merchant"){
+        if(this.value==="Merchant"){
             $(".js--category-merchant").show();
         } else{
             $(".js--category-merchant").hide();
@@ -133,7 +133,7 @@ $("#category").on('change', function() {
     });
 
 $("#category").on('change', function() {
-        if(this.value==="other"){
+        if(this.value==="Other"){
             $(".js--category-others").show();
         } else{
             $(".js--category-others").hide();
@@ -141,7 +141,7 @@ $("#category").on('change', function() {
     });
 
 $("#find-us").on('change', function() {
-        if(this.value==="other"){
+        if(this.value==="Other"){
             $(".js--find-us-others").show();
         } else{
             $(".js--find-us-others").hide();

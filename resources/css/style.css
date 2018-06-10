@@ -10,8 +10,6 @@ Error: #ef7070
 
 
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -398,12 +396,17 @@ header{
 }
 
 /*--------------------------------------------------------------------*/
-/* SUTD */
+/* INCUBATION */
 
-#sutd{
+.section-incubation .col{
+    margin:2% 0;
+}
+
+.section-incubation img{
     display:block;
     height:100px;
-    margin:2% auto;
+    margin: 0 auto;
+    
 }
 
 /*--------------------------------------------------------------------*/
