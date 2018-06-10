@@ -196,6 +196,10 @@
         margin:0 auto;
     }
     
+    .section-incubation img{
+        margin: 3% auto;
+    }
+    
 }
     
 /* small phones 0-480px */
@@ -251,6 +255,7 @@
     
     .section-incubation img{
         height:60px;
+        margin: 5% auto;
     }
     
     .section-contact-form{
