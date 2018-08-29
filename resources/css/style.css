@@ -420,6 +420,10 @@ header{
 /*-----------------------------------------------------*/
 /* FORM */
 
+.section-contact-us{
+    margin: 60px 0;
+}
+
 #contact-row{
     margin:0.5em 0;
 }
@@ -452,6 +456,11 @@ input[type=checkbox]{
 }
 
 input[type=submit]{
+    width:6em;
+    cursor:pointer;
+}
+
+input[type=submit]:hover{
     width:6em;
     cursor:pointer;
 }
